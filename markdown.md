@@ -42,7 +42,7 @@ alphabet
 Click [here](#)
 
 <!-- Image -->
-![Image description](/img/hamburger.svg)
+![Image description]()
 
 <!-- Table -->
 |Table 1|Table 2|Table 3|
