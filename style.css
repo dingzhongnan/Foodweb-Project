@@ -48,11 +48,11 @@ a{
 
 .navbar_toggle_Btn{
   display: none;
-  width: 22px;
-  height: 22px;
-  /* color: white; */
+  width: 24px;
+  height: 20px;
   position: absolute;
   right: 30px;
+  background-color: red;
 }
 
 
@@ -61,8 +61,8 @@ input[id="menuicon"]{
 }
 input[id="menuicon"] + label{
   display: block;
-  width: 60px;
-  height: 40px;
+  width: 24px;
+  height: 20px;
   position: relative;
   cursor: pointer;
 }
@@ -70,15 +70,34 @@ input[id="menuicon"] + label span{
   display: block;
   position: absolute;
   width: 100%;
-  height: 5px;
+  height: 3px;
   border-radius: 30px;
-  background: #000;
+  background: #fff;
   transition: all .35s;
 }
 input[id="menuicon"] + label span:nth-child(1) {
   top: 0;
 }
-input[id="menuicon"] + label span:nth-chiild(2){}
+input[id="menuicon"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3) {
+  bottom: 0;
+}
+input[id="menuicon"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="menuicon"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+
 
 /* 반응형 */
 
