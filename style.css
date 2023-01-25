@@ -4,33 +4,55 @@
   text-decoration: none;
 }
 body{
-  background-color: beige;
+  /* background-color: beige; */
   /* background-image: url(/img/Alexander_Flemming.jpg); */
   background-size: cover;
   font-family: 'Courier New', Courier, monospace;
   /* max-width: 100%; */
 }
-
-.navbar{
-  display: flex;
-  justify-content: space-between;
+.header{
   align-items: center;
-  background-color: gray;
+}
+.register{
+  width: 100%;
+  height: 20px;
+  /* margin-top: 10px; */
+  padding-top: 10px;
+}
+.register ul{
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  float: right;
+}
+.register ul li{
+  padding: 0px 4px;
+}
+.navbar{
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  /* background-color: gray; */
   padding: 5px 10px;
 }
 .navbar_logo{
   text-transform: uppercase;
   font-size: 40px;
+  background-color: aqua;
 }
 .navbar_logo a{
   color: white;
 }
 .navbar_menu{
+  width: 100%;
   display: flex;
   list-style: none;
   text-transform: uppercase;
-  font-size: 18px;
-  padding-left: 0;
+  font-size: 20px;
+  justify-content: flex-end;
+  font-weight: bold;
 }
 .navbar_menu a{
   color: white;
@@ -44,70 +66,12 @@ body{
 .navbar_menu_link:hover {
   color: blue;
 }
-
-.navbar_register{
-  display: flex;
-  list-style: none;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding-left: 0;
-  /* background-color: blue; */
-}
-.navbar_register li{
-  padding: 0px 4px;
-}
-
-.navbar_toggle_Btn{
-  display: none;
-  width: 24px;
-  height: 20px;
-  position: absolute;
-  right: 30px;
-  background-color: red;
-}
-
-
-input[id="menuicon"]{
-  display: none;
-}
-input[id="menuicon"] + label{
-  display: block;
-  width: 24px;
-  height: 20px;
-  position: relative;
-  cursor: pointer;
-}
-input[id="menuicon"] + label span{
-  display: block;
+.bg_slide img{
   position: absolute;
   width: 100%;
-  height: 3px;
-  border-radius: 30px;
-  background: #fff;
-  transition: all .35s;
+  background-size: cover;
+  z-index: -1;
 }
-input[id="menuicon"] + label span:nth-child(1) {
-  top: 0;
-}
-input[id="menuicon"] + label span:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-}
-input[id="menuicon"] + label span:nth-child(3) {
-  bottom: 0;
-}
-input[id="menuicon"]:checked + label span:nth-child(1) {
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-}
-input[id="menuicon"]:checked + label span:nth-child(2) {
-  opacity: 0;
-}
-input[id="menuicon"]:checked + label span:nth-child(3) {
-  bottom: 50%;
-  transform: translateY(50%) rotate(-45deg);
-}
-
 .hamburger{
   display: none;
   cursor: pointer;
@@ -197,7 +161,7 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
     padding: 0;
   }
   .navbar_logo{
-    display: flex;
+    display: none;
     background-color: blue;
     margin: auto;
   }
@@ -210,7 +174,7 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +183,7 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
     margin: 20px 0;
     font-size: 30px;
   }
-  .navbar_register{
+  .register{
     display: none;
   }
   .hamburger{
