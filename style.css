@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 body{
-  /* background-color: beige; */
+  background-color: gray;
   /* background-image: url(/img/Alexander_Flemming.jpg); */
   background-size: cover;
   font-family: 'Courier New', Courier, monospace;
@@ -14,10 +14,9 @@ body{
   align-items: center;
 }
 .register{
-  width: 100%;
-  height: 20px;
-  /* margin-top: 10px; */
-  padding-top: 10px;
+  margin: auto;
+  height: 40px;
+  padding: 20px 20px;
 }
 .register ul{
   display: flex;
@@ -38,6 +37,7 @@ body{
   padding: 5px 10px;
 }
 .navbar_logo{
+  width: 500px;
   text-transform: uppercase;
   font-size: 40px;
   background-color: aqua;
@@ -52,7 +52,7 @@ body{
   text-transform: uppercase;
   font-size: 20px;
   justify-content: flex-end;
-  font-weight: bold;
+  font-weight: bold;git
 }
 .navbar_menu a{
   color: white;
@@ -91,70 +91,6 @@ body{
 
 /* 반응형 */
 
-/* @media screen and (max-width:768px){
-  .navbar{
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-  .navbar_menu{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .navbar_menu li{
-    width: 100%;
-    text-align: center;
-  }
-  .navbar_register{
-    display: none;
-    justify-content: center;
-    width: 100%;
-  }
-  .navbar_toggle_Btn{
-    display: block;
-  }
-
-  .navbar_menu.active,
-  .navbar_register.active{
-    display: flex;
-  }
-} */
-
-/* @media(max-width:768px){
-  .hamburger{
-    display: block;
-  }
-  .hamburger.active .bar:nth-child(2){
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .navbar_menu{
-    position: fixed;
-    margin: -10px;
-    top: -80px;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    background-color: gray;
-  }
-  .navbar_register{
-    display: none;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navbar_menu.active{
-    top: 48px;
-  }
-} */
 
 @media screen and (max-width:768px) {
   .navbar{
